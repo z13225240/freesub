@@ -15,7 +15,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -57,13 +57,22 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇬🇷 希腊 (Greece) 04 - xiaohe",
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16310,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇬🇷 希腊 (Greece) 01 - xiaohe",
         "🇬🇷 希腊 (Greece) 02 - xiaohe",
-        "🇬🇷 希腊 (Greece) 03 - xiaohe"
+        "🇬🇷 希腊 (Greece) 03 - xiaohe",
+        "🇬🇷 希腊 (Greece) 04 - xiaohe"
       ]
     },
     {
@@ -72,7 +81,8 @@
       "outbounds": [
         "🇬🇷 希腊 (Greece) 01 - xiaohe",
         "🇬🇷 希腊 (Greece) 02 - xiaohe",
-        "🇬🇷 希腊 (Greece) 03 - xiaohe"
+        "🇬🇷 希腊 (Greece) 03 - xiaohe",
+        "🇬🇷 希腊 (Greece) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

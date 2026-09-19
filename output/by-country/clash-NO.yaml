@@ -15,7 +15,7 @@ proxies:
     public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
     short-id: f7b2
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇳🇴 挪威 (Norway) 02 - xiaohe
   server: 46.29.238.32
   port: 40443
@@ -40,7 +40,22 @@ proxies:
     public-key: 5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8
     short-id: b545fe8c5e22f92d
   servername: bowandbead.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇳🇴 挪威 (Norway) 04 - xiaohe
+  server: 46.8.210.129
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 2a3b101d-d8f9-40e7-9373-b0ef487c0035
+  sni: disk.api-yandex.net
+  skip-cert-verify: false
+- name: 🇳🇴 挪威 (Norway) 05 - xiaohe
+  server: 185.213.23.63
+  port: 990
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,6 +64,8 @@ proxy-groups:
   - 🇳🇴 挪威 (Norway) 01 - xiaohe
   - 🇳🇴 挪威 (Norway) 02 - xiaohe
   - 🇳🇴 挪威 (Norway) 03 - xiaohe
+  - 🇳🇴 挪威 (Norway) 04 - xiaohe
+  - 🇳🇴 挪威 (Norway) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,5 +74,7 @@ proxy-groups:
   - 🇳🇴 挪威 (Norway) 01 - xiaohe
   - 🇳🇴 挪威 (Norway) 02 - xiaohe
   - 🇳🇴 挪威 (Norway) 03 - xiaohe
+  - 🇳🇴 挪威 (Norway) 04 - xiaohe
+  - 🇳🇴 挪威 (Norway) 05 - xiaohe
 rules:
 - MATCH,PROXIES
