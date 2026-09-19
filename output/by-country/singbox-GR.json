@@ -6,23 +6,21 @@
     {
       "type": "vless",
       "tag": "🇬🇷 希腊 (Greece) 01 - xiaohe",
-      "server": "104.21.234.13",
-      "server_port": 2053,
-      "uuid": "d7d8af23-36cd-4c66-a42a-4469c177210f",
+      "server": "94.241.174.157",
+      "server_port": 40443,
+      "uuid": "8ac637bf-554e-4902-94d7-baf01780a83c",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "fancy-rain-136e.thisisalee.workers.dev",
-        "insecure": false,
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiMXZFdnZOdVFvSkNWIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiOTEuMTg2LjIxOS44MiJdfQ==",
-        "headers": {
-          "Host": "fancy-rain-136e.thisisalee.workers.dev"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ",
+          "short_id": "beb4"
         }
       }
     },

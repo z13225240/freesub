@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇪 比利时 (Belgium) 01 - xiaohe
-  server: 172.67.209.13
-  port: 443
-  udp: true
-  type: vless
-  uuid: fa45096d-bed0-ad80-c773-23c30000001b
-  tls: true
-  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: '/sync '
-    headers:
-      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
-- name: 🇧🇪 比利时 (Belgium) 02 - xiaohe
   server: 34.38.82.200
   port: 443
   udp: true
@@ -31,7 +16,7 @@ proxies:
     short-id: 31f187650d9530bb
   servername: www.cloudflare.com
   client-fingerprint: qq
-- name: 🇧🇪 比利时 (Belgium) 03 - xiaohe
+- name: 🇧🇪 比利时 (Belgium) 02 - xiaohe
   server: 35.195.122.169
   port: 443
   udp: true
@@ -42,30 +27,15 @@ proxies:
     public-key: i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs
     short-id: 68e97022627fa882
   servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇧🇪 比利时 (Belgium) 04 - xiaohe
-  server: 172.67.155.136
-  port: 2095
+  client-fingerprint: firefox
+- name: 🇧🇪 比利时 (Belgium) 03 - xiaohe
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16307
   udp: true
-  type: vless
-  uuid: 73796e63-0000-4000-8000-000000000008
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-- name: 🇧🇪 比利时 (Belgium) 05 - xiaohe
-  server: 207.175.190.56
-  port: 443
-  udp: true
-  type: vless
-  uuid: 51e493d4-b275-45e0-a714-e014f40b3c32
-  tls: true
-  reality-opts:
-    public-key: nTLhc6e5HMgO-hpD8RUMp0cd2t6p2_RqHLHM0P39_xA
-    short-id: 95ae4a39d3933191
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,8 +44,6 @@ proxy-groups:
   - 🇧🇪 比利时 (Belgium) 01 - xiaohe
   - 🇧🇪 比利时 (Belgium) 02 - xiaohe
   - 🇧🇪 比利时 (Belgium) 03 - xiaohe
-  - 🇧🇪 比利时 (Belgium) 04 - xiaohe
-  - 🇧🇪 比利时 (Belgium) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,7 +52,5 @@ proxy-groups:
   - 🇧🇪 比利时 (Belgium) 01 - xiaohe
   - 🇧🇪 比利时 (Belgium) 02 - xiaohe
   - 🇧🇪 比利时 (Belgium) 03 - xiaohe
-  - 🇧🇪 比利时 (Belgium) 04 - xiaohe
-  - 🇧🇪 比利时 (Belgium) 05 - xiaohe
 rules:
 - MATCH,PROXIES
