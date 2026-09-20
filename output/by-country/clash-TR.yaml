@@ -5,43 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 188.114.98.16
-  port: 2082
-  udp: true
-  type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.harmonica02.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 104.17.169.13
-  port: 2053
-  udp: true
-  type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  tls: true
-  servername: inDeX.HaRMONiCA01.WORkers.DeV
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /axch1mttbxz2k55y01
-    headers:
-      Host: inDeX.HaRMONiCA01.WORkers.DeV
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: 172.67.192.84
-  port: 2095
-  udp: true
-  type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.harmonica02.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   server: 78.135.73.47
   port: 443
   udp: true
@@ -53,21 +16,8 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  server: 31.214.152.140
-  port: 443
-  udp: true
-  type: vless
-  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8
-    short-id: 08
-  servername: dw.b-cdn.net
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -78,32 +28,29 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  server: max.karmatel.ir
-  port: 55519
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: jgzt1997.qivfelo.ir
+  port: 5052
   udp: true
-  type: vless
-  uuid: d10191ad-1671-496e-b0cb-be5a28d0739a
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: play-apps-features.googleusercontent.com
-- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
-  server: 172.67.151.109
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ept2V6yarWzazZStMu0CqM-jx3NN2wG0
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  server: nl.node-edge09.com
   port: 443
   udp: true
   type: vless
-  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
   tls: true
-  servername: jdzit4e4urks.xwzohsebujps.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: '/stream/PANEL_ZEUS/635698a6bb9c/loc-0 '
-    headers:
-      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+  reality-opts:
+    public-key: S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw
+    short-id: 8319913f2e5f5711
+  servername: nl.node-edge09.com
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -113,10 +60,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -126,9 +69,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
 rules:
 - MATCH,PROXIES
