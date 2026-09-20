@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 172.67.153.156
+- name: 🇮🇶 IQ 01 - xiaohe
+  server: 194.156.26.45
   port: 443
   udp: true
   type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  uuid: 6bef6685-e989-467c-8fea-7fa1c6a0af2c
   tls: true
-  servername: ccs2g.pai50288.uk
+  servername: lzc2j8i5ptexj5i7aq0hfxqadvzcq.wf99saf201sfs9.workers.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /pai50288
+    path: /vl/BBj8crirrHMxntD7H3o3z
     headers:
-      Host: ccs2g.pai50288.uk
+      Host: lzc2j8i5ptexj5i7aq0hfxqadvzcq.wf99saf201sfs9.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 rules:
 - MATCH,PROXIES
