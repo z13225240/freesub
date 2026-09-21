@@ -25,13 +25,19 @@ proxies:
   network: ws
   ws-opts:
     path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
 - name: 🇨🇱 智利 (Chile) 03 - xiaohe
-  server: 64.176.2.21
-  port: 8388
+  server: platform117.golnamakcert.top
+  port: 80
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: xBStBEVqvGwHPocc
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select

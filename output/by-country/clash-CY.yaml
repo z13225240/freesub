@@ -16,7 +16,7 @@ proxies:
     public-key: bPbAdn6ogLbiv5cRe5d12EL7FhooAIVrC3-fg90P-Bw
     short-id: 72104d27a0f5f62e
   servername: www.amazon.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   server: 194.76.154.31
   port: 40443
@@ -28,7 +28,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

@@ -6,7 +6,7 @@
     {
       "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "82.198.246.233",
+      "server": "82.198.246.37",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
       "security": "auto"
@@ -14,22 +14,13 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-      "server": "51.161.204.244",
+      "server": "172.105.169.70",
       "server_port": 443,
-      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
-      "flow": "xtls-rprx-vision",
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
-          "short_id": "0ad08b47f498efd2"
-        }
+        "server_name": "172.105.169.70",
+        "insecure": true
       }
     },
     {
@@ -73,19 +64,36 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
-      "server": "152.67.115.203",
+      "server": "51.161.204.244",
       "server_port": 443,
-      "password": "633bc3be486b646190661ac2387c150a",
+      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
+          "short_id": "0ad08b47f498efd2"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 06 - xiaohe",
+      "server": "vpn-au-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "whatsapp.com",
         "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "850a3fb1cd33a28f12d837578ae1a2e7"
       }
     },
     {
@@ -97,7 +105,8 @@
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe"
       ]
     },
     {
@@ -108,7 +117,8 @@
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
