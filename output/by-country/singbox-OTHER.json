@@ -6,17 +6,20 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "ccs2g.pai50288.uk",
+      "server": "172.67.148.26",
       "server_port": 443,
-      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
+      "uuid": "95de071f-747c-dc07-36ac-5c0854a9e50e",
       "tls": {
         "enabled": true,
-        "server_name": "ccs2g.pai50288.uk",
+        "server_name": "restless-boat-ebf2.moha102030.workers.dev",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/pai50288"
+        "path": "/syncfp=chrome",
+        "headers": {
+          "Host": "restless-boat-ebf2.moha102030.workers.dev"
+        }
       }
     },
     {

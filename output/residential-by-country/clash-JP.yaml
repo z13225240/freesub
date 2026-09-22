@@ -5,19 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
-  server: 207.148.99.230
-  port: 443
+  server: 129.153.71.28
+  port: 28863
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: c87cdd8d-bc58-4e49-b8d9-7843098fe3be
   tls: true
-  servername: cdn8848.776676.xyz
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /test/company/library?ed=2560fp=chrome
+    path: /@Marisa_kristi
     headers:
-      Host: cdn8848.776676.xyz
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
