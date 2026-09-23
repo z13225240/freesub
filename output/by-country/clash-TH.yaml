@@ -15,7 +15,7 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: chrome
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
   server: 34.15.176.240
   port: 443
@@ -29,7 +29,7 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: 104.16.111.193
+  server: 104.21.34.106
   port: 443
   udp: true
   type: vless
