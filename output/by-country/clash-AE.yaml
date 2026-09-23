@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: f62a8f0e-f8db-48a6-8f52-84922aa63368
+  uuid: 087d9e19-a290-49ed-a9ae-b47ca943bb39
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -28,7 +28,7 @@ proxies:
     public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
     short-id: 98096455d963bdbb
   servername: www.booking.com
-  client-fingerprint: ios
+  client-fingerprint: qq
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   server: 94.183.224.45
   port: 443
@@ -41,9 +41,9 @@ proxies:
     public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
     short-id: a1b2c3d4e5f67890
   servername: dzen.ru
-  client-fingerprint: chrome
+  client-fingerprint: ios
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 85.204.107.178
+  server: 85.204.107.181
   port: 8080
   udp: true
   type: hysteria2

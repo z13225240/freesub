@@ -8,7 +8,7 @@
       "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
       "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "f62a8f0e-f8db-48a6-8f52-84922aa63368",
+      "uuid": "087d9e19-a290-49ed-a9ae-b47ca943bb39",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -36,7 +36,7 @@
         "server_name": "www.booking.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -57,7 +57,7 @@
         "server_name": "dzen.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -69,7 +69,7 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-      "server": "85.204.107.178",
+      "server": "85.204.107.181",
       "server_port": 8080,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
