@@ -5,20 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
-  server: 104.21.61.42
-  port: 443
+  server: 193.8.215.96
+  port: 9443
   udp: true
   type: vless
-  uuid: 5b14b2cf-57e3-4f96-92f2-9695078f06d8
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
   tls: true
-  servername: 001.inc-electrocell-001-001.workers.dev
+  servername: hub-de-03.hanvpn.cc
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiSGdhak9tRkZLeDdwcCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: 001.inc-electrocell-001-001.workers.dev
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: de03-grpc-8e47a
 proxy-groups:
 - name: PROXIES
   type: select
