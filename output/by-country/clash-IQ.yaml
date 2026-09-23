@@ -1,0 +1,35 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇶 IQ 01 - xiaohe
+  server: 104.21.61.42
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5b14b2cf-57e3-4f96-92f2-9695078f06d8
+  tls: true
+  servername: 001.inc-electrocell-001-001.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiSGdhak9tRkZLeDdwcCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 001.inc-electrocell-001-001.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇶 IQ 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇶 IQ 01 - xiaohe
+rules:
+- MATCH,PROXIES

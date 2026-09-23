@@ -5,23 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
-      "server": "clhkzzzdbgwxxndnlm.cfooov.xyz",
-      "server_port": 61205,
-      "uuid": "55848813-689e-4a39-82cf-00748cbc7289",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe",
+      "server": "213.171.25.29",
+      "server_port": 9889,
+      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "dl.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "PhXLfJ4s8EPauWaeRpzAjSuZibhmMiZFEMr8h8qU6iI",
-          "short_id": "d1f38c0f15ed22"
+          "public_key": "ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU",
+          "short_id": "aabb"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
       }
     },
     {
@@ -29,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe"
+        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe"
+        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
