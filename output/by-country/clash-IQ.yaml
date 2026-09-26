@@ -5,21 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
-  server: 188.114.97.6
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 934f2038-17f8-4ec5-9204-8381e19fc6e3
-  tls: true
-  servername: tight-bush-0bb4.bshxyyxhdjdggb.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiVXFEMlhKZVY4dzNoTUtpZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: tight-bush-0bb4.bshxyyxhdjdggb.workers.dev
-- name: 🇮🇶 IQ 02 - xiaohe
-  server: 193.56.135.233
+  server: 193.56.135.212
   port: 9543
   udp: true
   type: vless
@@ -30,20 +16,18 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcde
   servername: storage.yandexcloud.net
-  client-fingerprint: safari
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - xiaohe
-  - 🇮🇶 IQ 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - xiaohe
-  - 🇮🇶 IQ 02 - xiaohe
 rules:
 - MATCH,PROXIES
