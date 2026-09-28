@@ -5,33 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 185.148.106.50
-  port: 8880
+  server: 185.87.24.168
+  port: 2085
   udp: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime54.workers.dev
+  uuid: ea53420b-e8ad-4e9d-ab21-ddd546231e92
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  network: ws
-  ws-opts:
-    path: /axch1mttbxz2k55y01
-    headers:
-      Host: index.harmonica01.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: 93.190.9.52
+  server: 93.190.9.131
   port: 3090
   udp: true
   type: vless
-  uuid: 52e8bce3-b255-486d-beb2-aa1b549c44b1
+  uuid: dca830a2-3c69-4e1b-bc0b-a2ea22af53ba
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: 93.190.8.22
+  port: 3090
+  udp: true
+  type: vless
+  uuid: dca830a2-3c69-4e1b-bc0b-a2ea22af53ba
   network: grpc
   grpc-opts:
     grpc-service-name: vless
@@ -49,16 +45,6 @@ proxies:
   servername: www.datadoghq.com
   client-fingerprint: qq
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  server: me17.msjia8844.site
-  port: 7443
-  udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -70,20 +56,16 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16272
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  server: me17.msjia8844.site
+  port: 7443
   udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,8 +77,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,7 +88,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
 rules:
 - MATCH,PROXIES
