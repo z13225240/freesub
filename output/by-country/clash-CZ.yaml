@@ -5,31 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 188.114.96.3
+  server: 195.133.66.229
   port: 443
   udp: true
   type: vless
-  uuid: 3423809a-08e5-4b93-bd76-c6cdcbfd9b52
+  uuid: 4abdfe42-aec7-4b66-974d-3f891e2e8184
   tls: true
-  servername: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: Zl6Fe6WYQuaFe_QNUB4qU7nRkGujy7LqjoQ96GO3jUc
+  servername: nlll.gaz-service.shop
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/Dx6V42S2EK2zpfDrJrOZXj4MI5PnNOGr
-    headers:
-      Host: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 195.133.66.229
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 4abdfe42-aec7-4b66-974d-3f891e2e8184
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng
+    short-id: b415b8d7a6106ace
+  servername: nlll.gaz-service.shop
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 rules:
 - MATCH,PROXIES
