@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: cz.monkora.org
+  server: 86.54.82.184
   port: 443
   udp: true
   type: vless
@@ -27,7 +27,7 @@ proxies:
     public-key: PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc
     short-id: 232b1b09e45325a4
   servername: cz1.animeteka.info
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇿 捷克 (Czech) 03 - xiaohe
   server: 153.76.190.41
   port: 8443

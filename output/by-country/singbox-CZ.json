@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "cz.monkora.org",
+      "server": "86.54.82.184",
       "server_port": 443,
       "uuid": "454431fc-71e2-42b1-b375-5b55dd06666a",
       "tls": {
@@ -35,7 +35,7 @@
         "server_name": "cz1.animeteka.info",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
