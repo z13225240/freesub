@@ -21,7 +21,7 @@ proxies:
   tls: true
   servername: bigdick.gamegrow.ru
   skip-cert-verify: false
-  client-fingerprint: safari
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
