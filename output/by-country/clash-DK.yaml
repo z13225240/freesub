@@ -5,17 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇰 丹麦 (Denmark) 01 - xiaohe
-  server: 81.17.159.115
-  port: 443
+  server: 77.74.123.106
+  port: 4443
   udp: true
-  type: vless
-  uuid: d3179449-2988-40ec-b08f-dcfe6e66ba63
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
-  servername: dk88.sonicsonic.icu
-  client-fingerprint: firefox
+  type: trojan
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  sni: grape-test-italy.dynuddns.net
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,26 +5,19 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇶 AQ 01 - xiaohe",
-      "server": "2.27.26.132",
-      "server_port": 444,
-      "uuid": "141bbdef-a341-4846-aec7-9d6531ff8790",
+      "tag": "🇦🇹 奥地利 (Austria) 01 (家宽) - xiaohe",
+      "server": "31.77.227.6",
+      "server_port": 52006,
+      "uuid": "bc659d88-a1e0-076c-a49a-7b51b26a7a7f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "apple.com",
+        "server_name": "bigdick.gamegrow.ru",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dEhIR-YkvqguXB5_P3LMuyNYM82lMHQsSGhhtkmvE0k",
-          "short_id": "d7abeb515312dc2f"
+          "fingerprint": "chrome"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "apple.com"
       }
     },
     {
@@ -32,14 +25,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇶 AQ 01 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇶 AQ 01 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
